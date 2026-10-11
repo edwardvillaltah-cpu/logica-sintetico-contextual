@@ -22,7 +22,8 @@ El Catálogo LSC-CALC 1.6 categoriza los sesgos, distorsiones y violaciones argu
 
 * **F-01: Falacia de Compensación Ilegítima ($VI_2 > VI_1$)**
   * **Definición:** Intentar justificar el colapso, deterioro o sacrificio de una variable de sustentabilidad primaria ($VI_1$) mediante el incremento artificial en utilidad, votos, popularidad o beneficios en una variable secundaria ($VI_2$).
-  * **Mecanismo de Detección:** $V(VI_1) < \text{Umbral} \wedge \Delta VI_2 > 0 \implies \text{BLOQUEO\_AUTOMÁTICO}$.
+  * **Mecanismo de Detección:**  
+    $$V(VI_1) < \text{Umbral} \land \Delta VI_2 > 0 \implies \text{BLOQUEO}$$
   * **Ejemplo Analítico:** Justificar la destrucción irreversible de una fuente hídrica local argumentando que incrementará los ingresos fiscales a corto plazo.
 
 * **F-02: Falacia de Disociación Contextual (Descontextualización)**
@@ -35,7 +36,7 @@ El Catálogo LSC-CALC 1.6 categoriza los sesgos, distorsiones y violaciones argu
 ### 2.2 Falacias de Evidencia e Incertidumbre ($\mathcal{E}$)
 
 * **F-03: Falacia de Opacidad Algorítmica (Caja Negra)**
-  * **Definición:** Presentar una conclusión o sentencia decisoria como normativamente vinculante apelando a un procesamiento automatizado opaco o subjetivo sin proporcionar la cadena de custodia lógica ni la trazabilidad en la tupla del objeto $Case_{3.0}$.
+  * **Definición:** Presentar una conclusión o sentencia decisoria como normativamente vinculante apelando a un procesamiento automatizado opaco o subjetivo sin proporcionar la cadena de custodia lógica ni la trazabilidad en la tupla del objeto `Case_3.0`.
   * **Mecanismo de Detección:** Ausencia de la tupla de trazabilidad o dependencias lógicas explícitas en el motor.
   * **Ejemplo Analítico:** Validar una decisión punitiva o asignación crítica argumentando que "el modelo o la IA estadística lo determinó", sin mostrar las premisas de origen.
 
@@ -50,12 +51,12 @@ El Catálogo LSC-CALC 1.6 categoriza los sesgos, distorsiones y violaciones argu
 
 * **F-05: Falacia de Inmunización a Derrotores (*Defeater Immunity*)**
   * **Definición:** Ignorar, censurar o descartar sistemáticamente la introducción de derrotores socavadores (*undercutting defeaters*) o rebatidores que alteran o invalidan la transición inferencial dentro de un régimen crítico ($K_1$).
-  * **Mecanismo de Detección:** $Defeater \in C_k \wedge \text{InferenceStatus} = \text{Unmodified}$.
+  * **Mecanismo de Detección:** $Defeater \in C_k \land \text{Estado} = \text{Inalterado}$.
   * **Ejemplo Analítico:** Sostener la validez inalterable de una premisa directiva a pesar de la aparición documentada de evidencia contextual que destruye el nexo causal.
 
 * **F-06: Falacia de Falsa Emergencia (Artificialidad de Régimen $K_2$)**
   * **Definición:** Declarar de manera injustificada un estado de excepción o régimen de emergencia ($K_2$) con el único propósito de saltarse los controles del régimen nominal ($K_0$) y eludir el principio de no compensación.
-  * **Mecanismo de Detección:** $R_{\text{real}} < \text{Umbral de Excepción} \wedge K_{\text{asignado}} = K_2$.
+  * **Mecanismo de Detección:** $R_{\text{real}} < \text{Umbral} \land K_{\text{asignado}} = K_2$.
   * **Ejemplo Analítico:** Fabricar una crisis ficticia para suspender la auditoría ordinaria de las variables basales del sistema.
 
 ---
