@@ -6,6 +6,7 @@
 **DOI de la Obra:** [10.6084/m9.figshare.34007775](https://doi.org/10.6084/m9.figshare.34007775)  
 **Registro de Propiedad Intelectual:** Presentación N.° 2026001383 (CNR, El Salvador)  
 **Licencia:** Creative Commons Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0)
+
 App Lógica LSC: [https://l-gica-sint-tico-contextual.ai.studio](https://l-gica-sint-tico-contextual.ai.studio
 
 ---
